@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,600');
+
+@-webkit-keyframes tatsu-ripple{0%{-webkit-transform:scale(1);opacity:1}to{-webkit-transform:scale(1.7);opacity:0}}
+@keyframes tatsu-ripple{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}to{-webkit-transform:scale(1.7);transform:scale(1.7);opacity:0}}
+
+
+body {
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', sans-serif;
+   background-image: url(../images/bc2g.jpg);
+   background-size: cover;
+}
+
+h1, h2 {
+   text-align: center;
+}
+
+.error{
+   background-color: #fbdddd;
+}
+
+/*Todolist header*/
+
+.todo-list .todo-list-header  {
+   display: flex;
+   height: 60px;
+}
+
+.todo-list .todo-list-header .left {
+   margin-right: auto;
+}
+
+.todo-list .todo-list-header .right {
+   margin-left: auto;
+   display: none;
+}
+
+.todo-list .todo-list-header:hover > .right {
+   display: block;
+}
+
+.todo-list .todo-list-header i:hover {
+   color: #fff;
+   cursor: pointer;
+}
+
+
+
+/*
+.todo-list .todo-list-header .right i:hover {
+   display: block;
+   color: #ccc;
+   background-color: #00000020
+}
+*/
+
+.todo-list .todo-list-header .form-group {
+   margin: auto;
+}
+
+
+
+.todo-list .todo-list-header, #add-project {
+   background: #f9f9f9; /* Old browsers */
+   background: -moz-linear-gradient(top, #000 0%, #457ebb 2%, #457ebb 9%, #395ca6 99%, #395ca6 99%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, #000 0%,#457ebb 2%,#457ebb 9%,#395ca6 99%,#395ca6 99%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, #000 0%,#457ebb 2%,#457ebb 9%,#395ca6 99%,#395ca6 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#395ca6',GradientType=0 ); /* IE6-9 */
+}
+
+.todo-list .todo-list-header  div{
+   display: flex;
+}
+
+
+.todo-list .todo-list-header i {
+   color: #333;
+   padding: 0 25px;
+   line-height: 60px;
+}
+
+
+.todo-list .todo-list-header h5 {
+   color: #fff;
+   line-height: 60px;
+}
+
+
+/*Table header*/
+
+.todo-list table thead {
+   background-image: linear-gradient(#e0e0e0, #cccccc);
+}
+
+.todo-list table thead a i{
+   font-size: 37px;
+   color: #549e6d;
+   padding: 0 10px;
+}
+
+.todo-list-container .todo-list input[type="text"] {
+   height: 40px;
+   -webkit-box-shadow: inset 0px 2px 7px 0px rgba(0,0,0,0.68);
+   -moz-box-shadow: inset 0px 2px 7px 0px rgba(0,0,0,0.68);
+   box-shadow: inset 0px 2px 7px 0px rgba(0,0,0,0.68);
+   border: none;
+   border-radius: 3px 0 0 3px !important;
+
+}
+.todo-list-container .todo-list button {
+   height: 40px;
+   background-image: linear-gradient(#8dc4a7, #4d7b5f);
+}
+
+.todo-list table tbody {
+   background-color: #fff;
+   border-radius: 0 0 50px 50px;
+}
+.todo-list table tr:last-child td:first-child {
+   -moz-border-radius: 0 0 0 30px;
+   -webkit-border-radius: 0 0 0 30px;
+   border-radius: 0 0 0 30px;
+}
+.todo-list table tr:last-child td:last-child {
+   -moz-border-radius: 0 0 30px 0;
+   -webkit-border-radius: 0 0 30px 0;
+   border-radius: 0 0 30px 0;
+}
+
+.todo-list table td {
+   vertical-align: inherit;
+}
+
+.todo-list table td.checkbox{
+   width: 50px;
+}
+
+.todo-list table td.task-title{
+   width: 75%;
+}
+
+.todo-list table td.task-title div{
+   display: flex;
+}
+
+.todo-list table td .dropdown-toggle{
+   min-width: 100px;
+}
+
+.todo-list table td.operate{
+   width: 100px;
+   justify-content: space-evenly;
+}
+
+.todo-list table td.operate i{
+   margin: 10px;
+}
+
+.fas{
+   margin-right: 2px;
+}
+
+.technical{
+   padding: 30px 0px;
+}
+
+
+.technical-task {
+   background-color: #fff;
+   padding: 10px;
+}
+
+
+
+
+/*footer*/
+
+footer {
+   margin-top: 30px;
+}
+
+.copyright p{
+   text-align: center;
+   color: #fff;
+}
+
+.modal .alert
+{
+   display: none;
+}
